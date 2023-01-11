@@ -1,5 +1,7 @@
 import click
 
+cmd_called = False
+
 
 @click.group()
 def cli():
@@ -8,4 +10,7 @@ def cli():
 
 @cli.command(name='thecmd')
 def run_thecmd():
-    pass
+    global cmd_called
+    cmd_called = True
+
+    run_thecmd._called = True
