@@ -15,9 +15,9 @@ class TestLazyCall(TestCase):
 
         try:
             cl(args)
-        except SystemExit as e:
+        except SystemExit:
             pass
 
         from cli import lg
-        res = getattr(lg.run_thecmd, '_called')
+        res = getattr(lg.run_thecmd, '_called', False)
         self.assertTrue(res)
