@@ -2,7 +2,7 @@
 
 $ click_lazy
 
-Click lazy is an extention for [click](https://palletsprojects.com/p/click).
+Click lazy is an extension for [click](https://palletsprojects.com/p/click).
 
 Click lazy allow you to separate set of commands in file and import it only if necessary.
 
