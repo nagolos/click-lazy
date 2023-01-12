@@ -1,11 +1,10 @@
 from functools import lru_cache
 from importlib import import_module
 
-import click
-from click import Context
+from click import Group, Context
 
 
-class LazyGroup(click.Group):
+class LazyGroup(Group):
     """
     A click Group that imports commands implementation only when needed.
     """
