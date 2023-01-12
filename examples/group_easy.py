@@ -3,7 +3,7 @@ import click
 
 @click.group()
 def cli():
-    """This script"""
+    """Easy script"""
 
 
 @cli.command(name='easy_cmd')

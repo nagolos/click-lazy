@@ -10,7 +10,7 @@ for i in range(3):
 
 @click.group()
 def cli():
-    """This script"""
+    """Havy script"""
 
 
 @cli.command(name='heavy_cmd')
