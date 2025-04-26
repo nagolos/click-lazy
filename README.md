@@ -28,7 +28,7 @@ import click
 
 @click.group()
 def cli():
-    """Havy script"""
+    """Heavy script"""
 
 
 @cli.command(name='heavy_cmd')
